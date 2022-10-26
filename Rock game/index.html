@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="nttps://fonts.googleapis.com/css2? family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score">
+        <div class="section-score">
+          <h3 class="name">Win</h3>
+          <p class="score-user">0</p>
+        </div>
+        <div class="section-score">
+          <h3>Equal</h3>
+          <p class="score-ties">0</p>
+        </div>
+        <div class="section-score">
+          <h3>Win</h3>
+          <p class="score-pc">0</p>
+        </div>
+      </div>
+      <div class="status">
+        <span class="fas fa-user"></span>
+        <div class="round-container">
+            <p class="rounds">Rounds</p>
+            <span class="round-result">0</span>
+        </div>
+        <span class="fa fa-desktop"></span>
+      </div>
+      <div class="game">
+        <img src="./Images/rock2.png" alt="user-image" class="user-image">
+        <img src="./Images/rock1.png" alt="Image" class="pc-image">
+      </div>
+      <div class="move">
+        <img src="./Images/rock.png" alt="" class="rock-user">
+        <img src="./Images/paper.png" alt="" class="paper-user">
+        <img src="./Images/scissors.png" alt="" class="scissors-user">
+      </div>
+
+      <div class="restart-btn">
+        <button onclick="restartGame()" class="restartButton">Restart</button>
+      </div>
+      <div class="mute-music">
+        <span class="fas fa-angle-left arrow"></span>
+        <span id="mute" class="fas fa-volume-up"></span>
+      </div>
+
+      <div class="start-images">
+        <img src="./images/Start-game.png" alt="banner">
+        <p class="start-game">Start</p>
+      </div>
+      <audio src="./sound_1.wav" type="audio/mp3" class="audio"></audio>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
